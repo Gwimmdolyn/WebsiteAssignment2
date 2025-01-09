@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="index.html">Home</a>
+            <a href="Pet Search.html">Pet Search</a>
+            <a href="adoption.html">Adoption Process</a>
+            <a href="resources.html">Pet Care Resources</a>
+        </div>
+        <div class="navbar-right">
+            <a href="profile.html" id="profile-link">
+                <img id="navbar-profile-pic" src="default-profile.png" alt="Profile Picture">
+                <span id="navbar-profile-name">Profile</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Search for Your Perfect Pet</h1>
+        <p>Use filters to find the pet that matches your preferences.</p>
+    </header>
+
+    <!-- Content -->
+    <div class="container">
+        <form id="searchForm">
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="">Any</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="bird">Bird</option>
+            </select>
+
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" placeholder="Enter breed (optional)">
+
+            <label for="age">Age:</label>
+            <select id="age" name="age">
+                <option value="">Any</option>
+                <option value="puppy">Puppy</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+                <option value="senior">Senior</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="">Any</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="temperament">Temperament:</label>
+            <select id="temperament" name="temperament">
+                <option value="">Any</option>
+                <option value="friendly">Friendly</option>
+                <option value="playful">Playful</option>
+                <option value="calm">Calm</option>
+                <option value="energetic">Energetic</option>
+            </select>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <h2>Search Results</h2>
+        <div id="searchResults" class="results-container">
+            <p>No results yet. Use the form above to search for pets.</p>
+        </div>
+    </div>
+
+    <script src="pets.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

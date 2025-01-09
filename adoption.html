@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Process</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="Pet Search.html">Pet Search</a>
+        <a href="adoption.html">Adoption Process</a>
+        <a href="resources.html">Pet Care Resources</a>
+    </div>
+    <div class="navbar-right">
+        <a href="profile.html" id="profile-link">
+            <img id="navbar-profile-pic" src="default-profile.png" alt="Profile Picture">
+            <span id="navbar-profile-name">Profile</span>
+        </a>
+    </div>
+</div>
+
+    <!-- Header -->
+    <header>
+        <h1>Adoption Process</h1>
+        <p>Your guide to adopting a new pet</p>
+    </header>
+
+    <!-- Content -->
+    <div class="w3-container w3-padding-64">
+        <h2>Step-by-Step Adoption Process</h2>
+        <ol>
+            <li>Search for a pet using the filters on the home page.</li>
+            <li>Save your favourite pets and create a user profile.</li>
+            <li>Book an appointment to visit the shelter and meet the pet in person.</li>
+            <li>Complete the adoption application form at the shelter.</li>
+            <li>Bring your new pet home and provide a loving environment.</li>
+        </ol>
+        <p>For more details, contact your local shelter.</p>  
+    </div>
+    <section id="adoption-requirements">
+        <h2>Adoption Requirements</h2>
+        <p>We are excited to help you find your perfect pet! Before you adopt, please ensure you meet the following requirements:</p>
+        <ul>
+            <li>Be at least 18 years of age or older.</li>
+            <li>Have a valid government-issued ID.</li>
+            <li>Provide proof of residence (rental agreement or ownership document).</li>
+            <li>Demonstrate financial ability to care for a pet (proof of income or savings).</li>
+            <li>Commit to providing regular veterinary care, proper training, and a loving home.</li>
+        </ul>
+        <p>If you have any questions about these requirements, please <a href="contact.html">contact us</a>.</p>
+    </section>
+
+    <!-- Form for appointments -->
+    <p>Or you could fill out the form below to book an appointment to see one of our speacial animals in the shelter.</p>
+    <div class="container">
+        <h2>Book Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet Adoption Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="adoption.js"></script>
+</body>
+</html>

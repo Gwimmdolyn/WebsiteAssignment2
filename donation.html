@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="index.html">Home</a>
+        <a href="Pet Search.html">Pet Search</a>
+        <a href="adoption.html">Adoption Process</a>
+        <a href="resources.html">Pet Care Resources</a>
+    </div>
+    <div class="navbar-right">
+        <a href="profile.html" id="profile-link">
+            <img id="navbar-profile-pic" src="default-profile.png" alt="Profile Picture">
+            <span id="navbar-profile-name">Profile</span>
+        </a>
+    </div>
+</div>
+
+    <!-- Header -->
+    <header>
+        <h1>Support Local Shelters</h1>
+        <p>Your donations make a difference in the lives of pets!</p>
+    </header>
+
+    <!-- Donation Form -->
+    <div class="container">
+        <form id="donationForm">
+            <label for="amount">Donation Amount (GBP):</label>
+            <input type="number" id="amount" name="amount" required placeholder="Enter amount" min="1">
+
+            <label for="frequency">Frequency:</label>
+            <select id="frequency" name="frequency">
+                <option value="one-time">One-Time</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <button type="submit">Donate</button>
+        </form>
+        <p id="donationMessage" style="color: green;"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Pet Adoption Platform. All rights reserved.</p>
+    </footer>
+    
+     <!-- Script -->
+    <script src="donation.js"></script>
+</body>
+</html>
