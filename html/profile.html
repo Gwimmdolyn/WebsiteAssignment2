@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+   <!-- Navbar -->
+<div class="navbar">
+    <div class="navbar-left">
+        <a href="../index.html">Home</a>
+        <a href="Pet Search.html">Pet Search</a>
+        <a href="adoption.html">Adoption Process</a>
+        <a href="resources.html">Pet Care Resources</a>
+    </div>
+    <div class="navbar-right">
+        <a href="profile.html" id="profile-link">
+            <img id="navbar-profile-pic" src="../images/default-profile.png" alt="Profile Picture">
+            <span id="navbar-profile-name">Profile</span>
+        </a>
+    </div>
+</div>
+
+     <!-- Profile -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <img id="profile-pic-preview" src="../images/default-profile.png" alt="Profile Picture">
+            <h2 id="profile-name">John Doe</h2>
+            <p id="profile-email">johndoe@example.com</p>
+        </div>
+        <form class="profile-form" id="profile-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="John Doe">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="johndoe@example.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+     <!-- Support for after you've adopted a pet -->
+    <section id="post-adoption-support">
+        <h2>Post-Adoption Support</h2>
+        <p>Congratulations on adopting your new companion! We're here to support you every step of the way. Explore the resources and tools below:</p>
+         <!-- Takes you to the pet care resources page -->
+        <div class="support-resources">
+            <article class="support-item">
+                <h3>Pet Care Guidelines</h3>
+                <p>Access comprehensive guides to help you care for your new pet.</p>
+                <a href="resources.html" class="view-resource">View Resources</a>
+            </article>
+             <!-- Also takes you to the pet care resources -->
+            <article class="support-item">
+                <h3>Training Assistance</h3>
+                <p>Need help with training? Check out our tips and expert advice.</p>
+                <a href="resources.html" class="view-resource">Get Training Tips</a>
+            </article>
+             <!-- Takes you to the contact page if any further help if required -->
+            <article class="support-item">
+                <h3>Connect with Us</h3>
+                <p>If you have questions or need further support, contact our team for personalized assistance.</p>
+                <a href="contact.html" class="view-resource">Contact Us</a>
+            </article>
+        </div>
+         <!-- Tracks your process for your adoption -->
+         <section class="adoption-tracker">
+            <h3>Your Adoption Journey</h3>
+            <p>Track the progress of your adoption journey and milestones:</p>
+            <ul>
+                <li>Adoption Date: <strong id="adoption-date">Loading...</strong></li>
+                <li>Next Veterinary Checkup: <strong id="vet-checkup">Loading...</strong></li>
+                <li>Training Progress: <strong id="training-progress">Loading...</strong></li>
+            </ul>
+            <button id="edit-tracker">Edit Tracker</button>
+        </section>
+    </section>
+    
+     <!-- If you have favourited any pets then they will appear here -->
+    <div id="favouritesSection">
+        <h2>Your Favourites</h2>
+        <div id="favouritesList"></div>
+    </div>
+    
+     <!-- Script -->
+    <script src="../js/profile.js"></script>
+</body>
+</html>

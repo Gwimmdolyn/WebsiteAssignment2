@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="index.html">Home</a>
+      <a href="html/Pet Search.html">Pet Search</a>
+      <a href="html/adoption.html">Adoption Process</a>
+      <a href="html/resources.html">Pet Care Resources</a>
+    </div>
+    <div class="navbar-right">
+      <a href="html/profile.html" id="profile-link">
+        <img id="navbar-profile-pic" src="images/default-profile.png" alt="Profile Picture">
+        <span id="navbar-profile-name">Profile</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to the Pet Adoption Platform</h1>
+    <p>Your first step to finding your new best friend.</p>
+    <p>Find Your Perfect Companion.</p>
+    <p>Adopt and Give a Special Pet a New Loving Home.</p>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Our Mission Section -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>We connect families with local shelters to help pets find loving homes.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+      <h2>About Us</h2>
+      <p>We connect families with local shelters to find their new best friends.</p>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+      <h2>If you would like to support us</h2>
+      <a href="html/donation.html">Donation</a>
+    </section>
+
+    <!-- Cost Calculator Section -->
+    <section id="cost-calculator">
+      <h2>Cost Calculator</h2>
+      <p>This will help you work out the total cost of adopting your new pet.</p>
+      <a href="html/calculator.html">Calculator</a>
+    </section>
+
+    <!-- Volunteer Program Section -->
+    <section id="volunteer-program">
+      <h2>Join Our Volunteer Program</h2>
+      <p>Make a difference in the lives of pets by becoming a volunteer. We are always looking for passionate individuals to help with events, foster care, and more.</p>
+      <form class="volunteer-form" onsubmit="alert('Thank you for signing up as a volunteer!'); return false;">
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+        </div>
+        <div>
+            <label for="skills">Tell us about your skills or interests:</label>
+            <textarea id="skills" name="skills" placeholder="e.g., pet care, event organization, fostering" required></textarea>
+        </div>
+        <div>
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+      <p>Together, we can create a brighter future for our furry friends.</p>
+    </section>
+
+    <!-- Newsletter Sign-Up Section -->
+    <section id="newsletter-signup">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay updated on the latest adoption events, pet care tips, and more by subscribing to our newsletter.</p>
+      <form class="newsletter-form">
+        <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+        </div>
+        <div>
+            <button type="submit" onclick="alert('Thank you for subscribing!')">Subscribe</button>
+        </div>
+    </form>
+      <h3>We respect your privacy and promise not to spam you.</h3>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pet Adoption Platform. All rights reserved.</p>
+  </footer>
+</body>
+</html>
