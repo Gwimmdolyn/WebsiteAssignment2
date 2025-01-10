@@ -147,13 +147,12 @@ form button:hover {
 .favourite-button,
 .details-button {
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     display: block;
     width: 100%;
-
     text-align: center;
     text-decoration: none;
 }
@@ -175,20 +174,3 @@ form button:hover {
 .details-button:hover {
     background-color: #1976d2;
 }
-
-/* Style for the tracker*/
-#edit-tracker {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#edit-tracker:hover {
-    background-color: #45a049;
-}
-
